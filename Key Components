@@ -1,0 +1,21 @@
+Key Components---
+
+1.Load Balancer: Routes traffic, performs health checks, ensures high availability.
+
+2.API Gateway: Manages routing, rate-limiting, authentication, and throttling under surge loads.
+
+3.Auth Service: Handles authentication/authorization using JWT or OAuth2.
+
+4.Application Layer: Stateless service layer that accepts optimization tasks and delegates to background workers or real-time processors.
+
+5.Job Queue: Buffers high volumes of requests, enables asynchronous processing, retries on failure, and decouples compute load.
+
+6.Optimization Engine: The core logic (e.g., berth scheduling) encapsulated in containerized microservices—can autoscale independently.
+
+7.Datastore: Relational DB with partitioning (e.g., by port, time) for faster queries; includes replication for fault tolerance.
+
+8.Cache (Redis): Speeds up common queries (e.g., port status, berth availability), offloads read pressure from DB.
+
+9. Monitoring & Observability: Prometheus, Grafana, and Alertmanager track metrics, logs, and system health.
+
+10. Cold Storage: Archive historical jobs and logs for audits and offline analysis.
