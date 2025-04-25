@@ -1,0 +1,15 @@
+Scales Horizontally:
+
+  --> Stateless API & optimization containers scale based on load.
+
+ --> Message queues buffer spikes, smoothing load on processors.
+
+ --> Read replicas handle DB read traffic.
+------------------------------------------------------------------------------------------------------------------
+Handle Failure:
+
+   -->Multi-AZ deployment for high availability.
+
+    -->Failover for DBs and queues.
+
+   --> Health checks + autoscaling keeps service responsive under failures.
